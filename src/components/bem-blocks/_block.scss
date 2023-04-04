@@ -1,0 +1,8 @@
+.block{
+  margin: 50px auto;
+  width: 100px;
+  height: 100px;
+  background-color: green;
+  @include bg('cover');
+  @include btn_anim;
+}
