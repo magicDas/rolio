@@ -1,0 +1,59 @@
+.counter {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+
+
+	&__btn {
+		border: 1px solid $color-grey;
+		border-radius: 0.5rem;
+		height: 2rem;
+		display: block;
+		padding: 0;
+		margin: 0;
+		background-color: #fff;
+		flex: 0 0 2rem;
+		/*@include tr;*/
+
+		&:hover.--minus {
+			border-color: $main-meet;
+			color: $main-meet;
+		}
+
+		&:hover.--plus {
+			border-color: $main-green;
+			color: $main-green;
+		}
+
+		&:active {
+			transform: scale(0.95);
+		}
+	}
+
+	&__btn-text {
+		font-size: 1.5rem;
+		color: inherit;
+		/*@include tr;*/
+	}
+
+	&__input {
+		display: block;
+		flex: 1 1 4rem;
+		min-width: 4rem;
+		max-width: 6rem;
+		height: 100%;
+		padding: 0;
+		margin: 0;
+		text-align: center;
+		border: none;
+		background-color: #fff;
+		font-size: 24px;
+		font-weight: 500;
+
+		&::-webkit-inner-spin-button,
+		&::-webkit-outer-spin-button {
+			-webkit-appearance: none;
+			margin: 0;
+		}
+	}
+}

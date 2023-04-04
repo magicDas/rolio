@@ -1,0 +1,29 @@
+.menu {
+    list-style: none;
+
+    &__item {
+        &+&{
+            margin-left: 3.5rem;
+        }
+    }
+
+    &__link {
+        display: inline-block;
+        text-decoration: none;
+        padding: 1rem;
+        font-size: 1.25rem;
+        line-height: 1.33;
+        color: white;
+        transition: all 0.24s;
+        &:hover{color: $main-meet}
+        &:focus{outline: transparent;}
+        &:focus-visible{
+            outline: transparent;
+            text-decoration: underline;
+            transform: translateY(-10%);
+        }
+        &:active{
+            transform: scale(0.95);
+        }
+    }
+}

@@ -1,4 +1,7 @@
-@import 'base/*.scss';
+// @import 'base/*.scss';
 @import 'global/*.scss';
-@import '**/_*.scss';
-@import '../components/**/*.scss';
+// @import '**/_*.scss';
+// @import '../components/**/*.scss';
+@import '../components/bem-blocks/**/*.scss';
+
+@import 'media';

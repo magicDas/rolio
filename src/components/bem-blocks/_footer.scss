@@ -1,0 +1,33 @@
+.footer {
+    background-color: $main-green;
+
+    &__wrapper {
+        
+    }
+
+    &__social {
+        list-style: none;
+    }
+
+    &__social-item {
+        &+&{
+            margin-left: 2rem;
+        }
+    }
+
+    &__social-link {
+        display: block;
+        width: 1.5rem;
+        height: 1.5rem;
+        @include btn_anim(1.1, 0.9);
+
+        &:focus{
+            outline: transparent;
+        }
+
+        &:focus-visible{
+            transform: translateY(-20%);
+        }
+    }
+}
+

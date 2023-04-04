@@ -1,1 +1,56 @@
-<header class="header"></header>
+<header class="header">
+    <div class="header__round"></div>
+    <div class="header__wrapper flex --align-center --just-space">
+        <a href="#main" class="header__logo">
+            @@include('../bem-blocks/logo/_logo.html')
+        </a>
+        <nav class="header__nav">
+            @@include('../bem-blocks/menu/_menu.html')
+        </nav>
+        <button 
+            class="header__cart-btn --svg__cart" 
+            type="button" 
+            aria-label="Cart" 
+            data-counter="1">
+        </button>
+    </div>
+</header>
+
+<!--
+<header class="header">
+	<div class="container">
+		<div class="header__inner flex">
+			<div class="header__round"></div>
+			<a href="#top" class="header__logo flex">Подняться вверх
+				<i class="header__logo-image --svg__logo-white"></i>
+			</a>
+			<nav class="header__nav nav">
+				<ul class="nav__list flex">
+					<li class="nav__item">
+						<a href="#oil" class="nav__link">Масло</a>
+					</li>
+					<li class="nav__item">
+						<a href="#about" class="nav__link">О нас</a>
+					</li>
+					<li class="nav__item">
+						<a href="#testimonials" class="nav__link">Отзывы</a>
+					</li>
+					<li class="nav__item">
+						<a href="#delivery" class="nav__link">Оплата и доставка</a>
+					</li>
+					<li class="nav__item">
+						<a href="#contacts" class="nav__link">Контакты</a>
+					</li>
+				</ul>
+			</nav>
+			<button class="header__cart cart js-cart" type="button">
+				Корзина
+				<i class="header__cart-icon --svg__icon-cart"></i>
+				<span class="header__cart-counter js-round flex">
+					<span class="header__count-num">10</span>
+				</span>
+			</button>
+		</div>
+	</div>
+</header>
+-->
