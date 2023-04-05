@@ -11,8 +11,9 @@ html {
 
 html,
 body {
-	height: 100%;
+	min-height: 100%;
 	position: relative;
+	// color: $color-text;
 }
 
 body {
@@ -21,10 +22,12 @@ body {
 }
 .main {
 	flex: 1 0 auto;
+	min-height: 200vh;
 }
-
+header,
 footer{
 	flex: 0 0 auto;
+	width: 100%;
 }
 
 ul,

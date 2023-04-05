@@ -1,8 +1,12 @@
 .footer {
     background-color: $main-green;
+    padding: 3.25rem 0;
 
     &__wrapper {
-        
+        width: 100%;
+        max-width: 96rem;
+        padding: 0 1rem;
+        margin: 0 auto;
     }
 
     &__social {
@@ -28,6 +32,10 @@
         &:focus-visible{
             transform: translateY(-20%);
         }
+    }
+    &__logo{
+        width: 3.5rem;
+        height: 7.25rem;
     }
 }
 
