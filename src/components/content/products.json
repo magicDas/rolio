@@ -1,0 +1,73 @@
+
+    [
+        {
+            "id": 1,
+            "name":"For salat",
+            "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ratione dolor totam in accusantium doloribus, reiciendis labore earum consectetur ea nisi.",
+            "components": "Lorem ipsum dolor sit amet, consectetur adipisicing elit.",
+            "price": {
+                "current": 115,
+                "discount": 0,
+                "discontPrice": 115
+            },
+            "volume": 250,
+            "picture": {
+                "link": "salat",
+                "alt": "Oil for salat"
+            },
+            "modif": "--salat"
+        },
+        {
+            "id": 2,
+            "name":"Italian",
+            "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ratione dolor totam in accusantium doloribus, reiciendis labore earum consectetur ea nisi.",
+            "components": "Lorem ipsum dolor sit amet, consectetur adipisicing elit.",
+            "price": {
+                "current": 115,
+                "discount": 12,
+                "discontPrice": 100
+            },
+            "volume": 250,
+            "picture": {
+                "link": "italian",
+                "alt": "Oil italian"
+            },
+            "modif": "--italian"
+        },
+        {
+            "id": 3,
+            "name":"For meat",
+            "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ratione dolor totam in accusantium doloribus, reiciendis labore earum consectetur ea nisi.",
+            "components": "Lorem ipsum dolor sit amet, consectetur adipisicing elit.",
+            "price": {
+                "current": 105,
+                "discount": 10,
+                "discontPrice": 100
+            },
+            "volume": 250,
+            "picture": {
+                "link": "meet",
+                "alt": "Oil for meat"
+            },
+            "modif": "--meat"
+        },
+        {
+            "id": 4,
+            "name":"The east",
+            "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ratione dolor totam in accusantium doloribus, reiciendis labore earum consectetur ea nisi.",
+            "components": "Lorem ipsum dolor sit amet, consectetur adipisicing elit.",
+            "price": {
+                "current": 115,
+                "discount": 12,
+                "discontPrice": 100
+            },
+            "volume": 250,
+            "picture": {
+                "link": "east",
+                "alt": "Oil the east"
+            },
+            "modif": "--east"
+        }
+       
+    ]
+

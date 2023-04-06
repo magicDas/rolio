@@ -1,19 +1,27 @@
 .counter {
-	display: flex;
-	align-items: center;
-	justify-content: space-between;
+	// display: flex;
+	// align-items: center;
+	// justify-content: space-between;
 
 
 	&__btn {
 		border: 1px solid $color-grey;
 		border-radius: 0.5rem;
+		padding:0 0.5rem;
+		line-height: 1.33;
+		font-weight: 300;
 		height: 2rem;
 		display: block;
-		padding: 0;
 		margin: 0;
 		background-color: #fff;
-		flex: 0 0 2rem;
+		color: $color-text;
+		// flex: 0 0 2rem;
 		/*@include tr;*/
+
+		&:hover{
+			background: transparent;
+			color: $color-text;
+		}
 
 		&:hover.--minus {
 			border-color: $main-meet;
@@ -28,6 +36,14 @@
 		&:active {
 			transform: scale(0.95);
 		}
+	}
+
+	&__text{
+		font-weight: 500;
+		font-size: 1.5rem;
+		line-height: 1.33;
+		color: $color-text;
+		margin: 1.5rem;
 	}
 
 	&__btn-text {

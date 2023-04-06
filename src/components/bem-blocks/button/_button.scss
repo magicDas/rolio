@@ -3,4 +3,15 @@ button {
     padding: .5rem 3rem;
     border-radius: 5rem;
     font-size: 1rem;
+    color: $main-green;
+    border: 1px solid $main-green;
+    @include btn_anim(1.05, 0.95);
+    font-weight: 700;
+    text-transform: uppercase;
+
+    &:hover{
+        background: $gradient-salat;
+        border: 1px solid transparent;
+        color: #fff;
+    }
 }

@@ -16,13 +16,13 @@ body {
 	// color: $color-text;
 }
 
-body {
+.mainpage {
 	display: flex;
 	flex-direction: column;
 }
 .main {
 	flex: 1 0 auto;
-	min-height: 200vh;
+	width: 100%;
 }
 header,
 footer{

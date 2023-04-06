@@ -1,0 +1,11 @@
+.products{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    width: 100%;
+    max-width: 96rem;
+    padding: 0 1rem;
+
+    &__title{
+        grid-column: 1/-1;
+    }
+}

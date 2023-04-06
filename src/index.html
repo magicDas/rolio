@@ -7,28 +7,39 @@
 "favicon":"img/favicons/favicon",
 })
 
-<body>
+<body class="mainpage flex --align-center --just-space">
 	@@include('components/page-blocks/_header.html')
 
-	<main class="main">
-		<div class="block --svg__logo-white"></div>
-		@@loop('components/page-blocks/_article.html','components/page-blocks/items.json')
-		<button>Some button</button>
-		@@include('components/page-blocks/_article.html',{
-			"modif":"--item-1"
-		})
-		@@include('components/page-blocks/_article.html',{
-			"modif":"--item-2"
-		})
-		@@include('components/page-blocks/_article.html',{
-			"modif":"--item-3"
-		})
-		@@include('components/page-blocks/_article.html',{
-			"modif":"--item-4"
-		})
-		@@include('components/page-blocks/_article.html',{
-			"modif":"--item-5"
-		})
+	<main class="main" id="main">
+		<section class="products" id="products">
+			<h2 class="products__title section-title">Oil</h2>
+			@@loop('components/bem-blocks/product-card/_product-card.html', 'components/content/products.json')
+		</section>
+
+
+		
+
+
+		<!--
+			<div class="block --svg__logo-white"></div>
+			@@loop('components/page-blocks/_article.html','components/page-blocks/items.json')
+			<button>Some button</button>
+			@@include('components/page-blocks/_article.html',{
+				"modif":"--item-1"
+			})
+			@@include('components/page-blocks/_article.html',{
+				"modif":"--item-2"
+			})
+			@@include('components/page-blocks/_article.html',{
+				"modif":"--item-3"
+			})
+			@@include('components/page-blocks/_article.html',{
+				"modif":"--item-4"
+			})
+			@@include('components/page-blocks/_article.html',{
+				"modif":"--item-5"
+			})
+		-->
 	</main>
 	
 	@@include('components/page-blocks/_footer.html')

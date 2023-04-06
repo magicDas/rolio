@@ -1,0 +1,45 @@
+<article class="product-card @@modif">
+    <div class="product-card__wrapper">
+        <img 
+            src="img/products/@@picture.link.png" 
+            alt="@@picture.alt" 
+            class="product-card__picture"
+        >
+    </div>
+    <div class="product-card__inner">
+        <h3 class="product-card__title">@@name</h3>
+        <p class="product-card__descr">@@description</p>
+        <p class="product-card__components">
+            <strong class="product-card__components-title">Sklad:</strong>
+            @@components
+        </p>
+
+        <div class="product-card__container flex --just-space --align-center">
+            <div class="product-card__counter counter flex --just-space --align-center">
+                <button class="counter__btn" arial-label="Delete product">-</button>
+                <span class="counter__text">2</span>
+                <button class="counter__btn" arial-label="Add product">+</button>
+            </div>
+            <span class="product-card__volume">@@volume ml.</span>
+            <span class="product-card__price">@@price.current UAH</span>   
+        </div>
+        <div class="product-card__container flex --just-space --align-center">
+            <!--
+            <button class="product-card__btn button" type="buuton">In Cart</button>
+            <button class="product-card__btn button" type="buuton">Order in Tg</button>
+            -->
+            @@include('../button/button.html',{
+                "class":{"bem__elem":"product-card__btn"},
+                "type":"button",
+                "text":"In Cart"
+            })
+            @@include('../button/button.html',{
+                "class":{"bem__elem":"product-card__btn"},
+                "type":"button",
+                "text":"Order In Tg"
+            })
+        </div>
+
+             
+    </div>
+</article>
