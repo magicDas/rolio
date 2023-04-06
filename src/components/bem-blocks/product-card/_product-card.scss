@@ -1,5 +1,82 @@
-.product-card{
+.product-card {
+    padding: 1.5rem;
+    flex-direction: column;
+    transition: all .24s;
+
     img{
-        width: 50px;
+        height: 100%;
+        max-height: 180px;
+    }
+
+    &:hover {
+        box-shadow: 0.75rem 0.75rem 2rem rgba(190, 191, 183, .1);
+    }
+
+    &__wrapper {
+        margin-bottom: 1rem;
+    }
+
+    &__picture {
+    }
+
+    &__inner {
+    }
+
+    &__title {
+        color:$main-green;
+    }
+
+    &__descr {
+        margin-top: 1rem;
+    }
+
+    &__components {
+        margin-top: 1rem;
+    }
+
+    &__components-title {
+    }
+
+    &__container {
+        margin-top: 1.5rem;
+    }
+
+    &__counter {
+    }
+
+    &__volume {
+        margin-left: auto;
+    }
+
+    &__price {
+        margin-left: 1rem;
+        font-size: 1.5rem;
+        font-weight: 700;
+    }
+
+    .--salat{
+        color: $main-salat;
+        background-color: $gradient-salat;
+    }
+    .--italian{
+        color: $main-italian;
+        background-color: $gradient-italian;
+    }
+    .--meat{
+        color: $main-meat;
+        background-color: $gradient-meat;
+    }
+    .--east{
+        color: $main-east;
+        background-color: $gradient-east;
+    }
+}
+
+.counter {
+
+    &__btn {
+    }
+
+    &__text {
     }
 }

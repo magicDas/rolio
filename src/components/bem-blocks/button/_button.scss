@@ -1,17 +1,75 @@
-button {
+/*button {
     @include no-btn;
-    padding: .5rem 3rem;
+    min-width: 8rem;
+    padding: .5rem 1rem;
     border-radius: 5rem;
-    font-size: 1rem;
-    color: $main-green;
-    border: 1px solid $main-green;
+    text-align: center;
+    font-size: .75rem;
+    color: $main-color;
+    border: 1px solid $main-color;
     @include btn_anim(1.05, 0.95);
     font-weight: 700;
     text-transform: uppercase;
 
     &:hover{
-        background: $gradient-salat;
+        background-color: $main-color;
         border: 1px solid transparent;
         color: #fff;
     }
+}
+*/
+.main-btn {
+	border-width: 1px;
+	border-style: solid;
+	font-size: 1rem;
+	padding: 0.5rem 1.5rem;
+	border-radius: 2rem;
+	background-color: #fff;
+
+	// @include tr;
+
+	&.--salat {
+		border-color: $main-salat;
+		color: $main-salat;
+	}
+
+	&.--italian {
+		border-color: $main-italian;
+		color: $main-italian;
+	}
+
+	&.--meat {
+		border-color: $main-meat;
+		color: $main-meat;
+	}
+
+	&.--east {
+		border-color: $main-east;
+		color: $main-east;
+	}
+
+	&:hover {
+		color: #fff !important;
+		border-color: transparent;
+
+		&.--salat {
+			background: $gradient-salat;
+		}
+
+		&.--italian {
+			background: $gradient-italian;
+		}
+
+		&.--meat {
+			background: $gradient-meat;
+		}
+
+		&.--east {
+			background: $gradient-east;
+		}
+	}
+
+	&:active {
+		transform: scale(0.95);
+	}
 }
