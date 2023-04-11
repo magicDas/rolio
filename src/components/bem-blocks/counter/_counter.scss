@@ -15,8 +15,8 @@
 		margin: 0;
 		background-color: #fff;
 		color: $color-text;
-		// flex: 0 0 2rem;
-		/*@include tr;*/
+		width: 2rem;
+		height: 2rem;
 
 		&:hover{
 			background: transparent;
@@ -41,14 +41,12 @@
 	&__text{
 		font-weight: 500;
 		font-size: 1.5rem;
-		line-height: 1.33;
-		color: $color-text;
-		margin: 1.5rem;
+		// line-height: 1.33;
+		margin: 0 1rem;
 	}
 
 	&__btn-text {
 		font-size: 1.5rem;
-		color: inherit;
 		/*@include tr;*/
 	}
 

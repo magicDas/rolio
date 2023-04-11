@@ -2,6 +2,13 @@ const gulp = require('gulp');
 const requireDir = require('require-dir');
 const tasks = requireDir('./tasks');
 
+const js_plugins = [
+  'node_modules/swiper/swiper-bundle.js'
+];
+const css_plugins = [
+  'node_modules/swiper/swiper-bundle.css'
+];
+
 exports.libs_style = tasks.libs_style;
 exports.svg_css = tasks.svg_css;
 exports.fonts = tasks.fonts;

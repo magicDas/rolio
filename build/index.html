@@ -27,6 +27,7 @@
 
 
 <body class="mainpage flex --align-center --just-space">
+
 	<header class="header">
     <div class="header__round"></div>
     <div class="header__wrapper flex --align-center --just-space">
@@ -100,8 +101,23 @@
 -->
 
 	<main class="main" id="main">
+		<section class="top-slider">
+			<div class="swiper top-slider__slider">
+				<div class="swiper-wrapper">
+					<div class="swiper-slide">Slide 1</div>
+					<div class="swiper-slide">Slide 2</div>
+					<div class="swiper-slide">Slide 3</div>
+				</div>
+			
+				<div class="swiper-button-prev"></div>
+				<div class="swiper-button-next"></div>			
+			</div>
+		</section>
+
+
 		<section class="products" id="products">
 			<h2 class="products__title section-title">Oil</h2>
+
 			<article class="product-card --salat flex --just-space --align-center" >
     <div class="product-card__wrapper">
         <img 
@@ -118,14 +134,22 @@
             Lorem ipsum dolor sit amet, consectetur adipisicing elit.
         </p>
 
-        <div class="product-card__container flex --just-space --align-center">
-            <div class="product-card__counter counter flex --just-space --align-center">
-                <button class="counter__btn" arial-label="Delete product">-</button>
-                <span class="counter__text">2</span>
-                <button class="counter__btn" arial-label="Add product">+</button>
-            </div>
+        <div class="product-card__container flex --just-space --align-end">
+            <div class="@@bem_class counter product-card__counter flex --just-space --align-end">
+    <button 
+        class="counter__btn --minus" 
+        arial-label="Delete product"
+        data-product="@@id">-</button>
+
+    <span class="counter__text">2</span>
+    
+    <button 
+        class="counter__btn --plus" 
+        arial-label="Add product"
+        data-product="@@id">+</button>
+</div>
             <span class="product-card__volume">250 ml.</span>
-            <span class="product-card__price">115 UAH</span>   
+            <span class="product-card__price">115 uah</span>   
         </div>
         <div class="product-card__container flex --just-space --align-center">
             <button class="product-card__btn main-btn --salat" type="button">In Cart</button>
@@ -150,14 +174,22 @@
             Lorem ipsum dolor sit amet, consectetur adipisicing elit.
         </p>
 
-        <div class="product-card__container flex --just-space --align-center">
-            <div class="product-card__counter counter flex --just-space --align-center">
-                <button class="counter__btn" arial-label="Delete product">-</button>
-                <span class="counter__text">2</span>
-                <button class="counter__btn" arial-label="Add product">+</button>
-            </div>
+        <div class="product-card__container flex --just-space --align-end">
+            <div class="@@bem_class counter product-card__counter flex --just-space --align-end">
+    <button 
+        class="counter__btn --minus" 
+        arial-label="Delete product"
+        data-product="@@id">-</button>
+
+    <span class="counter__text">2</span>
+    
+    <button 
+        class="counter__btn --plus" 
+        arial-label="Add product"
+        data-product="@@id">+</button>
+</div>
             <span class="product-card__volume">250 ml.</span>
-            <span class="product-card__price">115 UAH</span>   
+            <span class="product-card__price">115 uah</span>   
         </div>
         <div class="product-card__container flex --just-space --align-center">
             <button class="product-card__btn main-btn --italian" type="button">In Cart</button>
@@ -182,14 +214,22 @@
             Lorem ipsum dolor sit amet, consectetur adipisicing elit.
         </p>
 
-        <div class="product-card__container flex --just-space --align-center">
-            <div class="product-card__counter counter flex --just-space --align-center">
-                <button class="counter__btn" arial-label="Delete product">-</button>
-                <span class="counter__text">2</span>
-                <button class="counter__btn" arial-label="Add product">+</button>
-            </div>
+        <div class="product-card__container flex --just-space --align-end">
+            <div class="@@bem_class counter product-card__counter flex --just-space --align-end">
+    <button 
+        class="counter__btn --minus" 
+        arial-label="Delete product"
+        data-product="@@id">-</button>
+
+    <span class="counter__text">2</span>
+    
+    <button 
+        class="counter__btn --plus" 
+        arial-label="Add product"
+        data-product="@@id">+</button>
+</div>
             <span class="product-card__volume">250 ml.</span>
-            <span class="product-card__price">105 UAH</span>   
+            <span class="product-card__price">105 uah</span>   
         </div>
         <div class="product-card__container flex --just-space --align-center">
             <button class="product-card__btn main-btn --meat" type="button">In Cart</button>
@@ -214,14 +254,22 @@
             Lorem ipsum dolor sit amet, consectetur adipisicing elit.
         </p>
 
-        <div class="product-card__container flex --just-space --align-center">
-            <div class="product-card__counter counter flex --just-space --align-center">
-                <button class="counter__btn" arial-label="Delete product">-</button>
-                <span class="counter__text">2</span>
-                <button class="counter__btn" arial-label="Add product">+</button>
-            </div>
+        <div class="product-card__container flex --just-space --align-end">
+            <div class="@@bem_class counter product-card__counter flex --just-space --align-end">
+    <button 
+        class="counter__btn --minus" 
+        arial-label="Delete product"
+        data-product="@@id">-</button>
+
+    <span class="counter__text">2</span>
+    
+    <button 
+        class="counter__btn --plus" 
+        arial-label="Add product"
+        data-product="@@id">+</button>
+</div>
             <span class="product-card__volume">250 ml.</span>
-            <span class="product-card__price">115 UAH</span>   
+            <span class="product-card__price">115 uah</span>   
         </div>
         <div class="product-card__container flex --just-space --align-center">
             <button class="product-card__btn main-btn --east" type="button">In Cart</button>
@@ -232,9 +280,6 @@
     </div>
 </article>
 		</section>
-
-
-		
 
 
 		<!--

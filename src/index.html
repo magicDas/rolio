@@ -8,16 +8,29 @@
 })
 
 <body class="mainpage flex --align-center --just-space">
+
 	@@include('components/page-blocks/_header.html')
 
 	<main class="main" id="main">
-		<section class="products" id="products">
-			<h2 class="products__title section-title">Oil</h2>
-			@@loop('components/bem-blocks/product-card/_product-card.html', 'components/content/products.json')
+		<section class="top-slider">
+			<div class="swiper top-slider__slider">
+				<div class="swiper-wrapper">
+					<div class="swiper-slide">Slide 1</div>
+					<div class="swiper-slide">Slide 2</div>
+					<div class="swiper-slide">Slide 3</div>
+				</div>
+			
+				<div class="swiper-button-prev"></div>
+				<div class="swiper-button-next"></div>			
+			</div>
 		</section>
 
 
-		
+		<section class="products" id="products">
+			<h2 class="products__title section-title">Oil</h2>
+
+			@@loop('components/bem-blocks/product-card/_product-card.html', 'components/content/products.json')
+		</section>
 
 
 		<!--

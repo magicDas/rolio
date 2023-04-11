@@ -7,6 +7,7 @@ $main-green: #688800;
 $color-text: #4a4a4a;
 $color-grey: #949494;
 $white-green: #bfd087;
+$gradient-main: inherit;
 $gradient-salat: linear-gradient(320.69deg, #536614 15.36%, #97C20B 84.86%);
 $gradient-italian:linear-gradient(320.42deg, #076534 15.36%, #00DB69 82.23%);
 $gradient-meat:linear-gradient(321.31deg, #99160E 15.37%, #E84239 81.98%);
@@ -14,22 +15,6 @@ $gradient-east:linear-gradient(324.18deg, #BA6400 14.36%, #FF9D34 85.34%);
 $shadow: 20px 20px 30px rgba(0, 0, 0, 0.1);
 
 
-.--salat{
-	color: $main-salat;
-	background-color: $gradient-salat;
-}
-.--italian{
-	color: $main-italian;
-	background-color: $gradient-italian;
-}
-.--meat{
-	color: $main-meat;
-	background-color: $gradient-meat;
-}
-.--east{
-	color: $main-east;
-	background-color: $gradient-east;
-}
 /* :root {
 	--main-salat: $main-salat;
 	--main-meet: $main-meet;
