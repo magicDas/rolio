@@ -1,0 +1,45 @@
+.top-slider{
+    position: relative;
+    margin-top: -3.5rem;
+
+    &__slider{
+        max-width: 96rem;
+        padding: 3rem 1rem 0;
+        
+    }
+    &__title{
+        transition: all .3s;
+        font-size: 2.25rem;
+    }
+    &__header{
+        margin-left: auto;
+        max-width: 44rem;
+        position: relative;
+        z-index: 2;
+        margin-bottom: -8rem;
+        padding-right: 4rem;
+    }
+
+    .swiper-pagination{
+        position: static;
+        text-align: center;
+        margin-top: 2rem;
+    }
+
+    .swiper-pagination-bullet{
+        min-width: 8rem;
+        width: auto;
+        height: auto;
+        padding: 0.5rem 1rem;        
+        border-radius: 0;
+        background: transparent;
+        transition: all .3s;
+        font-size: 1.2rem;
+        opacity: .5;
+    }
+
+
+    .swiper-pagination-bullet-active{
+        opacity: 1;
+    }
+}

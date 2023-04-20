@@ -1,0 +1,76 @@
+.top-slide{
+    &__picture-main{
+        // max-height: 25rem;
+        // position: relative;
+        // object-fit: contain;
+        // height: 70%;
+    }    
+
+    &__pictures {
+        position: relative;
+        flex: 0 0 38rem;
+
+        &::after, &::before{
+            position: absolute;
+            content: '';
+            top: 50%;
+            left: 50%;            
+            @include centering('');
+            z-index: -1;
+            border-radius: 50%;
+        }
+        &::before{
+            height: 32.5rem;
+            width: 32.5rem;
+        }
+        &::after{
+            height: 35rem;
+            width: 35rem;
+        }
+	}
+
+    &__picture-main {
+        position: relative;
+        object-fit: contain;
+        height: 40rem;
+        z-index: 2;
+        transform: rotate(10deg);
+    }
+
+    &__picture-sub {
+        z-index: 1;
+        position: absolute;
+        left: 50%;
+        bottom: 0;
+    }
+
+    &__info {
+        flex: 0 0 38rem;
+        margin-left: 8rem;
+        flex-direction: column;
+    }
+
+    &__title {
+        font-size: 4rem;
+    }
+
+    &__descr {
+        margin-top: 2rem;
+        font-size: 1.3rem;
+    }
+
+    &__counter {
+        margin-top: 2rem;
+    }
+
+    &__buttons {
+        margin-top: 2rem;
+    }
+    &__btn{
+        width: 150px;
+        text-transform: uppercase;
+        &+&{
+            margin-left: 2.5rem;
+        }
+    }
+}

@@ -1,0 +1,42 @@
+<article 
+    class="top-slider__slide top-slide swiper-slide @@modif flex --align-center --just-center" 
+    data-productname="@@name"
+    data-modif="@@modif"
+    data-hash="@@picture.link">
+
+    <div class="top-slide__pictures flex --align-center --just-center">
+        <img
+            class="top-slide__picture-main" 
+            src="img/products/@@picture.link.png" 
+            alt="@@picture.alt"
+        >
+        <img
+            class="top-slide__picture-sub" 
+            src="img/products/sub-@@picture.link.png" 
+            alt=""
+        >
+    </div>
+
+    <div class="top-slide__info flex --just-end">
+		<h3 class="top-slide__title">"Oil @@name"</h3>
+		<p class="top-slide__descr">@@description</p>
+		@@include('../counter/_counter.html', {
+            'bem_class':"top-slide__counter",
+            'id':@@id
+        })
+        <div class="top-slide__buttons flex --align-center">
+            @@include('../button/_button.html',{
+                "class":{"bem__elem":"top-slide__btn main-btn @@modif",},
+                "type":"button",
+                "text":"More"
+            })
+            @@include('../button/_button.html',{
+                "class":{"bem__elem":"top-slide__btn main-btn @@modif"},
+                "type":"button",
+                "text":"In Cart"
+            })
+        </div>
+		
+	</div>
+
+</article>

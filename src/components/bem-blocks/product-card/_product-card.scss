@@ -60,8 +60,11 @@
     &__price {
         margin-left: 1rem;
         font-size: 1.5rem;
-        font-weight: 700;
-        
+        font-weight: 700;        
+    }
+
+    &__btn{
+        width: 8rem;
     }
 
     &:hover {
@@ -80,7 +83,7 @@
                 width: 16.75rem;
                 height: 16.75rem;
                 top: -3.5rem;
-                background: $color-grey;
+                // background: $color-grey;
                 box-shadow: 20px 20px 30px rgba(0, 0, 0, .1);
                 opacity: .2;
                 transition: all 1s;
@@ -99,28 +102,5 @@
     
 }
 
-.--salat{
-    color: $main-salat;
-    .product-card__wrapper::before{    
-        background: $gradient-salat;
-    }
-}
-.--italian{
-    color: $main-italian;
-    .product-card__wrapper::before{  
-        background: $gradient-italian;
-    }
-}
-.--meat{
-    color: $main-meat;
-    .product-card__wrapper::before{  
-        background: $gradient-meat;
-    }
-}
-.--east{
-    color: $main-east;
-    .product-card__wrapper::before{  
-        background: $gradient-east;
-    }
-}
+
 

@@ -1,2 +1,36 @@
+<script type="module">
+    import Swiper from 'https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.esm.browser.min.js'
+  
+    const topSlider = new Swiper('.swiper.top-slider__slider', {  
+        slidesPerView: 1,  
+        autoplay: true,
+        loop: true,
+        navigation: {
+          nextEl: ".top-slider__slider .swiper-button-next",
+          prevEl: ".top-slider__slider .swiper-button-prev",
+        },
+        pagination: {
+          el: ".top-slider__slider .swiper-pagination",
+          clickable: true,
+          hashNavigation:true,
+          renderBullet: function (index, className) {
+            let productname = document.querySelectorAll('.swiper-slide')[index].dataset.productname
+            console.log(index, className, productname);
+            return `<button class="${className}"><span class="swiper-pagination-bullet-text">${productname}</span></button>`;
+          },
+        },
+        on: {
+          slideChangeTransitionEnd: function () {
+            let modif = document.querySelector('.swiper-slide-active').dataset.modif,
+            topSliderClasses = document.querySelector('.top-slider').classList;
+
+            topSliderClasses.remove(topSliderClasses[1]);
+            topSliderClasses.add(modif);
+          }
+        }
+      });
+
+      
+</script>
 <script src="js/libs.min.js"></script>
 <script src="js/main.min.js"></script>
