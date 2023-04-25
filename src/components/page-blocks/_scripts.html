@@ -5,6 +5,7 @@
         slidesPerView: 1,  
         autoplay: true,
         loop: true,
+        slideToClickedSlide: true,
         navigation: {
           nextEl: ".top-slider__slider .swiper-button-next",
           prevEl: ".top-slider__slider .swiper-button-prev",
@@ -30,7 +31,16 @@
         }
       });
 
-      
+      const testimonialsSlider = new Swiper('.swiper.testimonials__slider',{
+        loop: true,
+        slidesPerView: 5,
+        spaceBetween: 32,
+        centeredSlides: true,
+        navigation: {
+          nextEl: ".testimonials__slider .swiper-button-next",
+          prevEl: ".testimonials__slider .swiper-button-prev",
+        },
+      });      
 </script>
 <script src="js/libs.min.js"></script>
 <script src="js/main.min.js"></script>

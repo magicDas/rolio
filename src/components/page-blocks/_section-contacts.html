@@ -1,0 +1,51 @@
+<section class="contacts" id="contacts">
+    <h2 class="contacts__title section-title">Contacts</h2>
+    <article class="contacts__block --top">
+        <img class="contacts__picture" src="img/products/contact.jpg" alt="about">
+
+        <div class="contacts__block-content">          
+            <a 
+                class="contacts__text --phone" 
+                href="tel:380960486461">
+                <img src="../../img/svg/phone.svg" alt="phone">
+                +38 (096) 04-86-461
+            </a>                
+                   
+            <a 
+                class="contacts__text --viber"
+                href="viber://chat?number=%2B380997943363"    
+            >
+                <img src="../../img/svg/viber.svg" alt="viber">
+                Viber: +38 (099) 79-43-363 
+            </a>
+            <a 
+                class="contacts__text --facebook"
+                href="https://www.facebook.com/"    
+            >
+                <img src="../../img/svg/facebook.svg" alt="facebook">
+                facebook.com
+            </a>
+            <a 
+                class="contacts__text --instagram"
+                href="https://www.instagram.com/" 
+            >
+                <img src="../../img/svg/instagram.svg" alt="instagram">
+                instagram.com
+            </a>
+            <a 
+                class="contacts__text --telegram"
+                href="tg://resolve?domain=@magicdas"
+            >
+                <img src="../../img/svg/telegram.svg" alt="telegram">
+                t.me
+            </a>
+            <div class="contacts__btn">
+                @@include('../../../src/components/bem-blocks/button/_button.html',{
+                    "class":{"bem__elem":"contacts__btn main-btn --salat @@modif",},
+                    "type":"button",
+                    "text":"Write to Us"
+                })
+            </div>
+        </div>
+    </article>
+</section>

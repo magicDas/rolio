@@ -9,10 +9,10 @@ window.addEventListener('scroll', function () {
     }
 });
 
-// function round() {
-//     let $round = document.querySelector('header__round'),
-//     wrapperLeft = document.querySelector('.header__wrapper').offsetLeft;
+function round() {
+    let $round = document.querySelector('header__round'),
+    wrapperLeft = document.querySelector('.header__wrapper').offsetLeft;
 
-//     return $round.style.left = wrapperLeft + 'px';
-// };
-// round();
+    return $round.style.left = wrapperLeft + 'px';
+}
+round();
