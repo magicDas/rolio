@@ -1,0 +1,15 @@
+@media (max-width: 768px){
+    .products {
+        grid-template-columns: repeat(2,1fr);
+    }
+    .delivery {
+        flex-direction: column;
+        width: 100%;
+    }
+    .delivery__part {
+        width: 100%;
+    }
+    .contacts__picture {
+        width: 100%;
+    }
+}

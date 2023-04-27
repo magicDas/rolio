@@ -1,0 +1,59 @@
+<dialog class="feedback" open>
+    <div class="feedback__overlay">
+        <button class="feedback__close" type="button" aria-label="Close dialog"></button>
+        <form action=""
+              class="feedback__form"
+              method="dialog">
+                <h2 class="feedback__form-title">Write to Us</h2>
+                <label class="feedback__input-wrapper">
+                    <span class="feedback__input-legend">Your Name</span>
+                    <input type="text"
+                        name="feedback__form-name"
+                        id="feedback__form-name"
+                        required
+                        inputmode="text"
+                        minlength="5"
+                        placeholder="Last Name & First Name">
+                </label>
+                <label class="feedback__input-wrapper">
+                    <span class="feedback__input-legend">Phone number</span>
+                    <input type="tel"
+                        name="feedback__form-tel"
+                        id="feedback__form-tel"
+                        required
+                        inputmode="tel"
+                        placeholder="+380">
+                </label>
+                <textarea 
+                    name="feedback_comment" 
+                    id="feedback_comment" 
+                    class="feedback__comment" 
+                    minlength="10"
+                    placeholder="Text comment"
+                    required>
+    
+                </textarea>
+                
+                @@include('../../../src/components/bem-blocks/button/_button.html',{
+                    "class":{"bem__elem":"feedback__send-btn main-btn --salat},
+                    "type":"submit",
+                    "text":"Send"
+                })
+        </form>
+    
+        <article class="feedback__response --sended --salat">
+            <h2 class="feedback__title">Thank You</h2>
+            <p class="feedback__response-text">
+                <span class="feedback__username"></span>
+                Your message has been delivered. We will call you back as soon as possible and answer all your questions.
+            </p>
+        </article>
+    
+        <article class="feedback__response --error --meat">
+            <h2 class="feedback__title">Error</h2>
+            <p class="feedback__response-text">
+                The message was not delivered. Try again.
+            </p>
+        </article>
+    </div>
+</dialog>

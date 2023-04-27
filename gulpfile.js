@@ -1,8 +1,9 @@
 const gulp = require('gulp');
 
-// const js_plugins = [
-//   'node_modules/swiper/swiper-bundle.js'
-// ];
+const js_plugins = [
+  'node_modules/swiper/swiper-bundle.js',
+  'node_modules/inputmask/dist/inputmask.js'
+];
 // const css_plugins = [
 //   'node_modules/swiper/swiper-bundle.css'
 // ];

@@ -44,6 +44,7 @@
     "vinyl-ftp": "^0.6.1"
   },
   "dependencies": {
+    "inputmask": "^5.0.8",
     "sass": "^1.56.0",
     "swiper": "^9.2.0"
   }

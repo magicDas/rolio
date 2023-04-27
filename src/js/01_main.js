@@ -16,3 +16,24 @@ function round() {
     return $round.style.left = wrapperLeft + 'px';
 }
 round();
+
+function validation(){
+    let telInputs = document.querySelectorAll('input[type="tel"]');
+    if (telInputs){
+        telInputs.forEach(tel=>{
+            Inputmask("+380" + "(" + "99" + ")" + " " + "999" + "-" + "99" + "-" + "99", {
+                greedy: false,
+                placeholder: "X",
+                validator: "[0-9]",
+                onincomplete: function() {
+                    tel.setCustomValidity('Fill in the field')
+                },
+                oncomplete: function() {
+                    tel.setCustomValidity('')
+                },
+            }).mask(tel);
+        });
+    };
+}
+
+validation();
